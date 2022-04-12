@@ -1,9 +1,18 @@
 @charset "UTF-8";
 @import "./Vendors/node_modules/normalize.css/normalize.css";
-/* ACTIVATION DE BOX-SIZING : les width incluerons la padding, les border et le 
-content dans toutes les boîtes du projet */
 * {
   box-sizing: border-box;
+  /* ACTIVATION DE BOX-SIZING : les width incluerons la padding, les border et le 
+  content dans toutes les boîtes du projet */
+}
+
+@font-face {
+  font-family: "Primary";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+* {
+  /*Chargement de la font Roboto pour l'ensemble du projet*/
+  font-family: "Primary", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

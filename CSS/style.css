@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@import "./Vendors/node_modules/normalize.css/normalize.css";
+/* ACTIVATION DE BOX-SIZING : les width incluerons la padding, les border et le 
+content dans toutes les boîtes du projet */
+* {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,8 +1,16 @@
 @font-face {
+    font-family: 'Titles';
+    src: url('/Fonts/Shrikhand-Regular.ttf');
+}
+@font-face {
     font-family: 'Primary';
     src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 }
 
 *{      /*Chargement de la font Roboto pour l'ensemble du projet*/
     font-family: 'Primary', sans-serif;
+}
+.Titles {
+    font-family: "Titles" ;
+    font-size: 2rem;
 }

@@ -2,27 +2,47 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Hébergements & Activités pour des vaccances réussie">
+        <meta name="description" content="Découvrez des restaurants d'exception, séléctionnés par nos soins">
         <meta name="viewport" content="width=device-width, initiale-scale=1.0, user-scalable=yes minimum-scale=1.0">
-        <title>Booki hebergement et découverte</title>
+        <title>Ohmyfood</title>
         <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
         <link rel="stylesheet" type="text/css" href="CSS/style.css">
         <script src="https://kit.fontawesome.com/6daafcc3bd.js" crossorigin="anonymous"></script>
     </head>
 
-    <header>
-        <button class="home-link"><a></a></button>
-        <h1 class="Titles">Ohmyfood</h1>
-    </header>
-    <main>
-        <section class="search">
-            <form id="recherche" method="post" action="pagedetraitement.js">
-                <p>
-                    <label for="saisie"><i class="fa-solid fa-location-dot"></i></label>
-                    <div class="SubTitles"></div>
-                    <input id="saisie" type="text" name="localisation"  placeholder="Paris, Belleville"/>
-                    <input id="bouton" type="submit" value="Explorer nos restaurants">
-                </p>
-            </form>
-        </section>
-    </main>
+    <body>  
+        <header>
+            <a id="return_home"><i class="fa-solid fa-arrow-left"></i></a>
+            <h1 class="Titles">Ohmyfood</h1>
+        </header>
+        <main>
+            <section class="search">
+                <form id="recherche" method="post" action="pagedetraitement.js">
+                    <p>
+                        <label for="saisie"><i class="fa-solid fa-location-dot"></i></label>
+                        <input id="saisie" type="text" name="localisation"  placeholder="Paris, Belleville"/>
+                        <div class="SubTitles">Réservez le menu qui vous convient</div>
+                        <div class="Comment">Découvrez des restaurants d'exception, séléctionnés par nos soins.</div>                   
+                        <input id="bouton" type="submit" value="Explorer nos restaurants">
+                    </p>
+                </form>
+            </section>
+            <section id="Fonctionnemt">
+
+            </section>
+            <section id="Restaurant">
+
+            
+            </section>
+        </main>
+        <footer>
+            <ul><img src="/images/logo/ohmyfood.png" alt:Ohmyfood></img>
+                <LI><i class="fa-solid fa-utensils"></i>Proposer un restaurant</LI>
+                <LI><i class="fa-hands-helping fas footer__icon"></i>Devenir partenair</LI>
+                <LI>Mention légales</LI>
+                <LI></LI>
+            </ul>
+        </footer>
+    </body>
+ 
+</html>

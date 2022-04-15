@@ -6,6 +6,24 @@
   content dans toutes les boîtes du projet */
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  position: fixed;
+  height: 120vh;
+  display: flex;
+  width: 55%;
+  opacity: 1;
+}
+
+main {
+  margin-top: 140vh;
+}
+
 @font-face {
   font-family: "Titles";
   src: url("/Fonts/Shrikhand-Regular.ttf");

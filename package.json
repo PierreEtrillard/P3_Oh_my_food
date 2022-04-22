@@ -1,11 +1,11 @@
 {
   "name": "p3_oh_my_food",
   "version": "1.0.0",
-  "description": "",
+  "description": "projet 3 formation OC",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded",
-    "prefix": "postcss ./css/style.css --use autoprefixer -d.css/prefixed/"
+    "sass": "sass --watch SASS/main.scss:CSS/style.css --style expanded",
+    "prefix": "postcss CSS/style.css --use autoprefixer -d CSS/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/PierreEtrillard/P3_Oh_my_food/issues"
   },
-  "homepage": "https://github.com/PierreEtrillard/P3_Oh_my_food#readme"
+  "homepage": "https://github.com/PierreEtrillard/P3_Oh_my_food#readme",
+  "dependencies": {
+    "normalize": "^0.3.1",
+    "prefix": "^1.0.0",
+    "sass": "^1.50.1"
+  }
 }
+

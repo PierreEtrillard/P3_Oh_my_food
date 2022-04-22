@@ -1,0 +1,17 @@
+@keyframes anim_logo {
+    0%{
+        transform: translate(100%);
+    }
+    10% {
+        transform-origin: left;
+        transform: rotate(1turn) translate(90% -35%);
+    }
+    40% {
+        transform: rotate(4turn) translate(40% 20%);
+    }
+    45% {
+        transform: rotate(4turn) translate(30% -20%);}
+    100% {transform: rotate(1turn) ;
+    }
+
+}

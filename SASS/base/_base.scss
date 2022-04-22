@@ -10,11 +10,12 @@ content dans toutes les boîtes du projet */
   }
   header {
     position: fixed;
-    height:120vh;
     display: flex;
     width: 55%;
     opacity: 1;
   }
   main {
-    margin-top: 140vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 14vh;
   }

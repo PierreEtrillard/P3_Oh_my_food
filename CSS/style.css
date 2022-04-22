@@ -1,5 +1,23 @@
 @charset "UTF-8";
 @import "./Vendors/node_modules/normalize.css/normalize.css";
+@keyframes anim_logo {
+  0% {
+    transform: translate(100%);
+  }
+  10% {
+    transform-origin: left;
+    transform: rotate(1turn) translate(90% -35%);
+  }
+  40% {
+    transform: rotate(4turn) translate(40% 20%);
+  }
+  45% {
+    transform: rotate(4turn) translate(30% -20%);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
 * {
   box-sizing: border-box;
   /* ACTIVATION DE BOX-SIZING : les width incluerons la padding, les border et le 
@@ -14,14 +32,15 @@ body {
 
 header {
   position: fixed;
-  height: 120vh;
   display: flex;
   width: 55%;
   opacity: 1;
 }
 
 main {
-  margin-top: 140vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 14vh;
 }
 
 @font-face {
@@ -43,6 +62,12 @@ main {
 }
 
 .SubTitles {
+  font-size: 2rem;
+}
+
+.logo_AJT {
+  animation: anim_logo 2800ms ease-out 200ms forwards;
+  font-family: "Titles";
   font-size: 2rem;
 }
 

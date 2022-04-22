@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import "./Vendors/node_modules/normalize.css/normalize.css";
+@-webkit-keyframes anim_logo {
+  0% {
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+  }
+  10% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: rotate(1turn) translate(90% -35%);
+            transform: rotate(1turn) translate(90% -35%);
+  }
+  40% {
+    -webkit-transform: rotate(4turn) translate(40% 20%);
+            transform: rotate(4turn) translate(40% 20%);
+  }
+  45% {
+    -webkit-transform: rotate(4turn) translate(30% -20%);
+            transform: rotate(4turn) translate(30% -20%);
+  }
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+@keyframes anim_logo {
+  0% {
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+  }
+  10% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: rotate(1turn) translate(90% -35%);
+            transform: rotate(1turn) translate(90% -35%);
+  }
+  40% {
+    -webkit-transform: rotate(4turn) translate(40% 20%);
+            transform: rotate(4turn) translate(40% 20%);
+  }
+  45% {
+    -webkit-transform: rotate(4turn) translate(30% -20%);
+            transform: rotate(4turn) translate(30% -20%);
+  }
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* ACTIVATION DE BOX-SIZING : les width incluerons la padding, les border et le 
+  content dans toutes les boîtes du projet */
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 55%;
+  opacity: 1;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 14vh;
+}
+
+@font-face {
+  font-family: "Titles";
+  src: url("/Fonts/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Primary";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+* {
+  /*Chargement de la font Roboto pour l'ensemble du projet*/
+  font-family: "Primary", sans-serif;
+}
+
+.Titles {
+  font-family: "Titles";
+  font-size: 2rem;
+}
+
+.SubTitles {
+  font-size: 2rem;
+}
+
+.logo_AJT {
+  -webkit-animation: anim_logo 2800ms ease-out 200ms forwards;
+          animation: anim_logo 2800ms ease-out 200ms forwards;
+  font-family: "Titles";
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3N0eWxlLmNzcyIsIi4uLy4uL1NBU1MvbWFpbi5zY3NzIiwiLi4vLi4vU0FTUy91dGlscy9fa2V5ZnJhbWVzLnNjc3MiLCIuLi8uLi9TQVNTL2Jhc2UvX2Jhc2Uuc2NzcyIsIi4uLy4uL1NBU1MvYmFzZS9fdHlwb2dyYXBoeS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGdCQUFnQjtBQ0FSLDREQUFBO0FDQVI7RUFDSTtJQUNJLGtDQUFBO1lBQUEsMEJBQUE7RUZHTjtFRURFO0lBQ0ksOEJBQUE7WUFBQSxzQkFBQTtJQUNBLG9EQUFBO1lBQUEsNENBQUE7RUZHTjtFRURFO0lBQ0ksbURBQUE7WUFBQSwyQ0FBQTtFRkdOO0VFREU7SUFDSSxvREFBQTtZQUFBLDRDQUFBO0VGR047RUVGRTtJQUFNLGdDQUFBO1lBQUEsd0JBQUE7RUZLUjtBQUNGO0FFbkJBO0VBQ0k7SUFDSSxrQ0FBQTtZQUFBLDBCQUFBO0VGR047RUVERTtJQUNJLDhCQUFBO1lBQUEsc0JBQUE7SUFDQSxvREFBQTtZQUFBLDRDQUFBO0VGR047RUVERTtJQUNJLG1EQUFBO1lBQUEsMkNBQUE7RUZHTjtFRURFO0lBQ0ksb0RBQUE7WUFBQSw0Q0FBQTtFRkdOO0VFRkU7SUFBTSxnQ0FBQTtZQUFBLHdCQUFBO0VGS1I7QUFDRjtBR25CQTtFQUNJLDhCQUFBO1VBQUEsc0JBQUE7RUFBdUI7NENBQUE7QUh1QjNCOztBR25CRTtFQUNFLG9CQUFBO0VBQUEsb0JBQUE7RUFBQSxhQUFBO0VBQ0EsNEJBQUE7RUFBQSw2QkFBQTtNQUFBLDBCQUFBO1VBQUEsc0JBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsbUJBQUE7QUhzQko7O0FHcEJFO0VBQ0UsZUFBQTtFQUNBLG9CQUFBO0VBQUEsb0JBQUE7RUFBQSxhQUFBO0VBQ0EsVUFBQTtFQUNBLFVBQUE7QUh1Qko7O0FHckJFO0VBQ0Usb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSw0QkFBQTtFQUFBLDZCQUFBO01BQUEsMEJBQUE7VUFBQSxzQkFBQTtFQUNBLGdCQUFBO0FId0JKOztBSTNDQTtFQUNJLHFCQUFBO0VBQ0Esd0NBQUE7QUo4Q0o7QUk1Q0E7RUFDSSxzQkFBQTtFQUNBLHdFQUFBO0FKOENKO0FJM0NBO0VBQVEseURBQUE7RUFDSixrQ0FBQTtBSjhDSjs7QUk1Q0E7RUFDSSxxQkFBQTtFQUNBLGVBQUE7QUorQ0o7O0FJN0NBO0VBQ0ksZUFBQTtBSmdESjs7QUMvQ0E7RUFDSSwyREFBQTtVQUFBLG1EQUFBO0VBQ0EscUJBQUE7RUFDQSxlQUFBO0FEa0RKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

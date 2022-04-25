@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: 'Primary';
-    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    src: url('/Fonts/Roboto-Medium.ttf');
 }
 
 *{      /*Chargement de la font Roboto pour l'ensemble du projet*/
@@ -15,5 +15,13 @@
     font-size: 2rem;
 }
 .SubTitles {
-    font-size: 2rem;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
 }
+.Comment {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: lighter;
+}
+

@@ -375,42 +375,8 @@ a:visited {
 .super_container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.super_container header h1 {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 20px;
-}
-.super_container header h1 img {
-  width: 70%;
-}
-.super_container #recherche {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.super_container footer {
-  background-color: #353535;
   width: 100%;
-}
-.super_container footer img {
-  filter: invert(100%);
-  width: 35%;
-  padding: 10px;
-}
-.super_container footer ul {
-  padding-left: 20px;
-}
-.super_container footer LI {
-  list-style: none;
-  padding: 10px;
-  color: white;
-}
-.super_container footer LI i {
-  padding-right: 10px;
 }
 
 @font-face {
@@ -419,7 +385,15 @@ a:visited {
 }
 @font-face {
   font-family: "Primary";
-  src: url("/Fonts/Roboto-Medium.ttf");
+  src: url("/Fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Primary-Bold";
+  src: url("/Fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Primary-light";
+  src: url("/Fonts/Roboto-Light.ttf");
 }
 * {
   /*Chargement de la font Roboto pour l'ensemble du projet*/
@@ -432,15 +406,99 @@ a:visited {
 }
 
 .SubTitles {
-  font-size: 26px;
-  font-weight: bold;
+  font-family: "Primary-Bold";
+  font-size: 28px;
   text-align: center;
 }
 
 .Comment {
-  font-size: 1rem;
+  font-family: "Primary-Light";
+  font-size: 18px;
   text-align: center;
-  font-weight: lighter;
+}
+
+#recherche {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 350px;
+}
+#recherche .saisie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #353535;
+  width: 100%;
+  height: 60px;
+  border: 0;
+  background-color: #e9e9e9;
+}
+#recherche .saisie input {
+  border: 0;
+  background-color: #e9e9e9;
+  text-align: center;
+}
+#recherche .saisie input::placeholder {
+  color: #353535;
+  font-weight: bold;
+}
+#recherche .saisie input:focus {
+  border: 0;
+}
+#recherche .Comment {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#recherche .SubTitles {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#recherche #bouton {
+  width: 60%;
+  border-radius: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  height: 50px;
+  margin-bottom: 60px;
+  border: 0;
+  box-shadow: 0px 5px 5px 2px #d0d0d0;
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+header h1 img {
+  width: 70%;
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+}
+footer img {
+  filter: invert(100%);
+  margin-top: 20px;
+  width: 35%;
+  padding: 10px;
+}
+footer ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+footer LI {
+  list-style: none;
+  padding: 10px;
+  color: white;
+}
+footer LI i {
+  padding-right: 10px;
 }
 
 .logo_AJT {

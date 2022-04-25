@@ -4,7 +4,15 @@
 }
 @font-face {
     font-family: 'Primary';
-    src: url('/Fonts/Roboto-Medium.ttf');
+    src: url('/Fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Primary-Bold';
+    src: url('/Fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'Primary-light';
+    src: url('/Fonts/Roboto-Light.ttf');
 }
 
 *{      /*Chargement de la font Roboto pour l'ensemble du projet*/
@@ -15,13 +23,13 @@
     font-size: 2rem;
 }
 .SubTitles {
-    font-size: 26px;
-    font-weight: bold;
+    font-family:'Primary-Bold';
+    font-size: 28px;
     text-align: center;
 }
 .Comment {
-    font-size: 1rem;
+    font-family:'Primary-Light';
+    font-size: 18px;
     text-align: center;
-    font-weight: lighter;
 }
 

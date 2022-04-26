@@ -408,7 +408,7 @@ a:visited {
 .SubTitles {
   font-family: "Primary-Bold";
   font-size: 28px;
-  text-align: center;
+  margin-left: 20px;
 }
 
 .Comment {
@@ -420,11 +420,12 @@ a:visited {
 #recherche {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   background-color: #f6f6f6;
   width: 100%;
   height: 350px;
+  margin-bottom: 40px;
 }
 #recherche .saisie {
   display: flex;
@@ -435,11 +436,12 @@ a:visited {
   width: 100%;
   height: 60px;
   border: 0;
-  background-color: #e9e9e9;
+  border-top: solid 3px #9d9d9d;
+  background: linear-gradient(#9d9d9d, 1px, #e9e9e9);
 }
 #recherche .saisie input {
   border: 0;
-  background-color: #e9e9e9;
+  background: none;
   text-align: center;
 }
 #recherche .saisie input::placeholder {
@@ -450,12 +452,11 @@ a:visited {
   border: 0;
 }
 #recherche .Comment {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-bottom: 40px;
 }
 #recherche .SubTitles {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 40px 50px 20px 50px;
+  text-align: center;
 }
 #recherche #bouton {
   width: 60%;
@@ -476,6 +477,61 @@ header h1 {
 }
 header h1 img {
   width: 70%;
+}
+
+.functionement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.functionement__steps {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-family: Primary-Bold;
+  font-size: 14px;
+  width: 80%;
+  height: 75px;
+  margin: 20px;
+  border-radius: 25px;
+  box-shadow: 0px 5px 5px 2px #d0d0d0;
+  background-color: #f6f6f6;
+}
+.functionement__steps:hover::after {
+  opacity: 1;
+}
+.functionement__steps:hover > i {
+  color: #9356DC;
+}
+.functionement__steps::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 25px;
+  background-color: #f2eafb;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+}
+.functionement__steps .num {
+  position: absolute;
+  left: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  font-family: Primary-Bold;
+  width: 35px;
+  height: 35px;
 }
 
 footer {

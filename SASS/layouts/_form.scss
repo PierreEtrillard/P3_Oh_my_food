@@ -1,11 +1,13 @@
 #recherche {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   background-color: $color-grey;
   width: 100%;
   height: 350px;
+  margin-bottom: 40px;
+
     .saisie { 
     @include centralizer;
     font-size:18px;
@@ -13,10 +15,11 @@
     width: 100%;
     height:60px;
     border:0;
-    background-color: darken($color-grey, 5%);
+    border-top:solid 3px darken($color-grey, 35%);
+    background: linear-gradient(darken($color-grey, 35%), 1px, darken($color-grey, 5%));
         input {
         border: 0;
-        background-color: darken($color-grey, 5%);
+        background: none;
         text-align: center;
             &::placeholder {
             color: $color-dark;
@@ -28,12 +31,11 @@
         } 
     }
     .Comment {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-bottom: 40px;
     }
     .SubTitles {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin: 40px 50px 20px 50px;
+        text-align: center;
     }
     #bouton {
         width:60%;

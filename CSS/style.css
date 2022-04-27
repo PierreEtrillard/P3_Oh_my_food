@@ -413,12 +413,12 @@ a:visited {
 
 .Comment {
   font-family: "Primary-Light";
-  font-size: 18px;
+  font-size: 22px;
 }
 
 #Restaurants {
   background-color: #f6f6f6;
-  padding: 40px 0px 40px 0px;
+  padding: 60px 0px 40px 0px;
 }
 
 .restos {
@@ -428,19 +428,50 @@ a:visited {
   flex-direction: column;
 }
 .restos__cards {
-  list-style: none;
+  box-shadow: 0px 5px 5px 2px #e9e9e9;
   border-radius: 20px;
   background-color: white;
   height: 260px;
   width: 90%;
   margin: 20px 0px 20px 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.restos__cards .SubTitles ~ .restos__cards .Comment {
+  font-size: 22px;
+  margin-left: 20px;
 }
 .restos__cards img {
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 100%;
-  height: 65%;
+  height: 70%;
+  position: relative;
+  z-index: 0;
+}
+.restos__cards--new {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #278870;
+  background-color: #99E2D0;
+  height: 30px;
+  width: 80px;
+  font-weight: bolder;
+}
+.restos__cards i {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 28px;
+  background: linear-gradient(#9356DC, #FF79DA);
 }
 
 #recherche {

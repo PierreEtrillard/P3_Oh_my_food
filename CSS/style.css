@@ -365,11 +365,11 @@ template {
 
 a:link {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 a:visited {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .super_container {
@@ -414,7 +414,33 @@ a:visited {
 .Comment {
   font-family: "Primary-Light";
   font-size: 18px;
-  text-align: center;
+}
+
+#Restaurants {
+  background-color: #f6f6f6;
+  padding: 40px 0px 40px 0px;
+}
+
+.restos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.restos__cards {
+  list-style: none;
+  border-radius: 20px;
+  background-color: white;
+  height: 260px;
+  width: 90%;
+  margin: 20px 0px 20px 0px;
+}
+.restos__cards img {
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 65%;
 }
 
 #recherche {
@@ -424,7 +450,6 @@ a:visited {
   align-items: center;
   background-color: #f6f6f6;
   width: 100%;
-  height: 350px;
   margin-bottom: 40px;
 }
 #recherche .saisie {
@@ -434,7 +459,7 @@ a:visited {
   font-size: 18px;
   color: #353535;
   width: 100%;
-  height: 60px;
+  height: 50px;
   border: 0;
   border-top: solid 3px #9d9d9d;
   background: linear-gradient(#9d9d9d, 1px, #e9e9e9);
@@ -452,14 +477,15 @@ a:visited {
   border: 0;
 }
 #recherche .Comment {
-  margin-bottom: 40px;
+  margin: 0px 20px 40px 20px;
+  text-align: center;
 }
 #recherche .SubTitles {
   margin: 40px 50px 20px 50px;
   text-align: center;
 }
 #recherche #bouton {
-  width: 60%;
+  width: 55%;
   border-radius: 50px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
@@ -484,6 +510,7 @@ header h1 img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 .functionement__steps {
   position: relative;
@@ -501,6 +528,10 @@ header h1 img {
   box-shadow: 0px 5px 5px 2px #d0d0d0;
   background-color: #f6f6f6;
 }
+.functionement__steps i {
+  font-size: 24px;
+  margin-left: 20px;
+}
 .functionement__steps:hover::after {
   opacity: 1;
 }
@@ -514,10 +545,10 @@ header h1 img {
   right: 0;
   bottom: 0;
   left: 0;
-  border-radius: 25px;
-  background-color: #f2eafb;
   opacity: 0;
   z-index: -1;
+  border-radius: 25px;
+  background-color: #f2eafb;
   transition: opacity 250ms;
 }
 .functionement__steps .num {
@@ -538,23 +569,30 @@ footer {
   background-color: #353535;
   width: 100%;
 }
-footer img {
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+ul LI {
+  list-style: none;
+  padding: 10px;
+  color: white;
+}
+ul LI img {
   filter: invert(100%);
   margin-top: 20px;
   width: 35%;
   padding: 10px;
 }
-footer ul {
-  padding-left: 20px;
-  margin-bottom: 20px;
+ul LI i {
+  padding-right: 10px;
 }
-footer LI {
-  list-style: none;
-  padding: 10px;
+ul LI a:link {
   color: white;
 }
-footer LI i {
-  padding-right: 10px;
+ul LI a:visited {
+  color: white;
 }
 
 .logo_AJT {

@@ -1,23 +1,32 @@
 footer {
     background-color: $color-dark;    
     width: 100%;
-    img {
-      filter: invert(100%);      
-      margin-top: 20px;
-      width:35% ;
-      padding: 10px;
+}
+   
+ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  LI {
+   list-style: none;
+   padding: 10px;
+   color:white;
+   img {
+     filter: invert(100%);      
+     margin-top: 20px;
+     width:35% ;
+     padding: 10px;
+    }
+   i {
+     padding-right: 10px;
+   }
+   a {
+     &:link {
+     color: white;
      }
-    ul {
-       padding-left: 20px;
-       margin-bottom: 20px
+     &:visited {
+       color: white;
      }
-
-      LI {
-          i {
-            padding-right: 10px;
-          }
-        list-style: none;
-        padding: 10px;
-        color:white;
-      }
+   }
   }
+}
+  

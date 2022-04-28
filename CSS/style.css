@@ -416,6 +416,17 @@ a:visited {
   font-size: 22px;
 }
 
+.Titles_restos {
+  font-family: "Primary-Bold";
+  font-size: 22px;
+  margin: 20px 0 10px 20px;
+}
+
+.Comment_restos {
+  font-size: 22px;
+  margin: 0 0 20px 20px;
+}
+
 #Restaurants {
   background-color: #f6f6f6;
   padding: 60px 0px 40px 0px;
@@ -431,17 +442,13 @@ a:visited {
   box-shadow: 0px 5px 5px 2px #e9e9e9;
   border-radius: 20px;
   background-color: white;
-  height: 260px;
+  height: 280px;
   width: 90%;
   margin: 20px 0px 20px 0px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.restos__cards .SubTitles ~ .restos__cards .Comment {
-  font-size: 22px;
-  margin-left: 20px;
 }
 .restos__cards img {
   object-fit: cover;
@@ -451,6 +458,12 @@ a:visited {
   height: 70%;
   position: relative;
   z-index: 0;
+}
+.restos__cards .contenair_i {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 28px;
 }
 .restos__cards--new {
   position: absolute;
@@ -462,16 +475,33 @@ a:visited {
   justify-content: center;
   color: #278870;
   background-color: #99E2D0;
-  height: 30px;
-  width: 80px;
+  height: 35px;
+  width: 90px;
   font-weight: bolder;
 }
-.restos__cards i {
+
+/******icons coeur*****/
+.contenair_i_rel {
+  position: relative;
+}
+.contenair_i_rel:active > .fa-solid {
+  opacity: 1;
+  z-index: 1;
+}
+.contenair_i_rel .fa-solid {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
-  font-size: 28px;
-  background: linear-gradient(#9356DC, #FF79DA);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(#9356DC, #FF79DA) no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: opacity 250ms;
 }
 
 #recherche {

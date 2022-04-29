@@ -590,13 +590,16 @@ header h1 img {
   background-color: #f6f6f6;
 }
 .functionement__steps i {
-  font-size: 24px;
   margin-left: 20px;
+  font-size: 22px;
 }
 .functionement__steps:hover::after {
   opacity: 1;
 }
-.functionement__steps:hover > i {
+.functionement__steps:hover > .functionement__steps i::before {
+  opacity: 0;
+}
+.functionement__steps:hover i::before {
   color: #9356DC;
 }
 .functionement__steps::after {

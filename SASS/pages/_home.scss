@@ -3,6 +3,20 @@
     flex-direction: column;
     margin-bottom: 60px;
     
+    @include desktop {
+        position: fixed;
+        right: -360px;
+        top: 50px;
+        width: 450px;
+        z-index: 2;
+        justify-content: space-evenly;
+        display: flex;
+        height: 100%;
+        &:hover { 
+            right: -70px;
+            transition: 0.4s ease-out;}
+    }
+    
         &__steps {
             position: relative;
             z-index: 1;

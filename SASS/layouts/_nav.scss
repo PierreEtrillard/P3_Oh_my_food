@@ -4,8 +4,20 @@
   }
 .restos {
     @include centralizer;
+    @include tab {
+        flex-wrap: wrap;
+        flex-direction:row;
+        justify-content: space-evenly;
+        }
+        @include desktop {
+            width: 95%;
+        }
     flex-direction:column;
         &__cards {
+            @include tab {
+                width:40%;
+                max-height: 315px;
+            }
             box-shadow: 0px 5px 5px 2px darken($color-grey, 5%);
             border-radius: 20px;
             background-color: white;
@@ -38,7 +50,7 @@
                 z-index: 1;
                 @include centralizer;
                 color: darken($color-tertiary,40%);
-                background-color: $color-tertiary;
+                background-color: lighten($color-tertiary,15%);
                 height: 35px;
                 width: 90px;
                 font-weight: bolder;
@@ -65,7 +77,7 @@
         background:linear-gradient($color-primary,$color-secondary) no-repeat;
         background-clip: text;
         -webkit-background-clip: text;
-        transition: opacity 250ms;
+        transition: opacity 400ms;
         }
 
     }

@@ -7,12 +7,30 @@
         <title>Ohmyfood</title>
         <link rel="stylesheet" type="text/css" href=".\CSS/style.css">
         <script src="https://kit.fontawesome.com/6daafcc3bd.js" crossorigin="anonymous"></script>
+
+<!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@publisher_handle">
+        <meta name="twitter:title" content="ohmyfood">
+        <meta name="twitter:description" content="Découvrez des restaurants d'exception, séléctionnés par nos soins">
+        <meta name="twitter:creator" content="@ohmyfood-Paris">
+<!-- Twitter Summary card images must be at least 200x200px -->
+        <meta name="twitter:image" content="/images/logo/ohmyfood.png">
+
+<!-- Open Graph data -->
+        <meta property="og:title" content="Ohmyfood" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="adresse du site à définir" />
+        <meta property="og:image" content="./images/logo/ohmyfood.png" />
+        <meta property="og:description" content="Découvrez des restaurants d'exception, séléctionnés par nos soins" />
+
     </head>
 
     <body>  
         <div class="super_container">
         <header>
-            <h1 class="Titles"><img src="/images/logo/ohmyfood.png" alt="Ohmyfood"></h1>
+            <!-- <h1 class="Titles"><img src="/images/logo/ohmyfood@2x.svg" alt="Ohmyfood"></h1> -->
+            <h1></h1>
         </header>
         <main>
             <form id="recherche" method="post" action="pagedetraitement.js">
@@ -103,7 +121,7 @@
         </main>
         <footer>
             <ul>
-                <LI><img src="/images/logo/ohmyfood.png" alt="Ohmyfood"></img></LI>
+                <LI><div id="footer_logo"></div></LI>
                 <LI><i class="fa-solid fa-utensils"></i>Proposer un restaurant</LI>
                 <LI><i class="fa-hands-helping fas footer__icon"></i>Devenir partenaire</LI>
                 <LI>Mention légales</LI>

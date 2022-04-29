@@ -1,18 +1,22 @@
 @font-face {
     font-family: 'Titles';
     src: url('/Fonts/Shrikhand-Regular.ttf');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Primary';
     src: url('/Fonts/Roboto-Regular.ttf');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Primary-Bold';
     src: url('/Fonts/Roboto-Bold.ttf');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Primary-light';
     src: url('/Fonts/Roboto-Light.ttf');
+    font-display: swap;
 }
 
 *{      /*Chargement de la font Roboto pour l'ensemble du projet*/
@@ -25,7 +29,8 @@
 .SubTitles {
     font-family:'Primary-Bold';
     font-size: 28px;
-    margin-left: 20px;
+    margin-left: 20px;    
+    @include desktop {display: none;}
 }
 .Comment {
     font-family:'Primary-Light';

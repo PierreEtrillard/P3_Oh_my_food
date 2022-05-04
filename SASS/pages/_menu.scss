@@ -58,6 +58,7 @@
     margin: 20px 0 20px 0;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
     &__Text{
         max-width:70% ;
         display: flex;
@@ -76,11 +77,14 @@
         text-overflow: ellipsis;
         }
     &__prices {
-        @include centralizer;
-        transform: translateX(70px);
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
     &__validation {
-            transform: scaleX(0);
+        transition: transform  0.2s ease-out;
+        transform: translateX(50%) scaleX(0);
+        overflow: hidden;
             background: $color-tertiary;
             color:$color-tertiary;
             @include centralizer;
@@ -98,5 +102,11 @@
             }
         
     } 
+    &:hover > .MenusTags__validation i  {
+    animation: validate 0.4s 0.2s ease-out both;
+    }
+    &:hover > .MenusTags__validation  {
+        transform: translateX(0) scaleX(1);
+    }
 
 }

@@ -57,28 +57,3 @@
                 }    
         }
 }
-/******icons coeur*****/
-.contenair_i_rel {
-    position: relative;
-    cursor: pointer;
-    &:active >.fa-solid {
-        opacity: 1;
-        z-index: 1;
-    }       
-     .fa-solid {
-        position:absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        opacity: 0;
-        z-index: -1;
-        color: transparent;
-        -webkit-text-fill-color:transparent;
-        background:linear-gradient($color-primary,$color-secondary) no-repeat;
-        background-clip: text;
-        -webkit-background-clip: text;
-        transition: opacity 400ms;
-        }
-
-    }

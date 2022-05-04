@@ -367,12 +367,24 @@ template {
     opacity: 1;
   }
 }
-@keyframes validation {
+@keyframes validate {
   0% {
-    transform: scaleX(0);
+    transform: translateX(200%) rotate(1turn);
+  }
+  49% {
+    transform: translateX(-98%) scaleX(0.5);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  51% {
+    transform: translateX(-100%) scaleX(0.5);
+  }
+  70% {
+    transform: translate(-50%, -100%) rotate(-1turn) scaleY(0.5);
   }
   100% {
-    transform: scaleX(1);
+    transform: translateX(0);
   }
 }
 * {
@@ -475,6 +487,31 @@ a:visited {
   }
 }
 
+/******icons coeur*****/
+.contenair_i_rel {
+  position: relative;
+  cursor: pointer;
+}
+.contenair_i_rel:active > .fa-solid {
+  opacity: 1;
+  z-index: 1;
+}
+.contenair_i_rel .fa-solid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(#9356DC, #FF79DA) no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: opacity 400ms;
+}
+
 #Restaurants {
   background-color: #f6f6f6;
   padding: 60px 0px 40px 0px;
@@ -544,31 +581,6 @@ a:visited {
   height: 35px;
   width: 90px;
   font-weight: bolder;
-}
-
-/******icons coeur*****/
-.contenair_i_rel {
-  position: relative;
-  cursor: pointer;
-}
-.contenair_i_rel:active > .fa-solid {
-  opacity: 1;
-  z-index: 1;
-}
-.contenair_i_rel .fa-solid {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  z-index: -1;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(#9356DC, #FF79DA) no-repeat;
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: opacity 400ms;
 }
 
 #recherche {
@@ -777,6 +789,7 @@ header a i {
   margin: 20px 0 20px 0;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 .MenusTags__Text {
   max-width: 70%;
@@ -797,12 +810,13 @@ header a i {
 }
 .MenusTags__prices {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateX(70px);
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .MenusTags__validation {
-  transform: scaleX(0);
+  transition: transform 0.2s ease-out;
+  transform: translateX(50%) scaleX(0);
+  overflow: hidden;
   background: #99E2D0;
   color: #99E2D0;
   display: flex;
@@ -822,6 +836,12 @@ header a i {
   align-items: center;
   justify-content: center;
   margin: 5px;
+}
+.MenusTags:hover > .MenusTags__validation i {
+  animation: validate 0.4s 0.2s ease-out both;
+}
+.MenusTags:hover > .MenusTags__validation {
+  transform: translateX(0) scaleX(1);
 }
 
 footer {

@@ -20,8 +20,11 @@
     60%{opacity:0.5;}
     100%{opacity: 1;}
 }
-@keyframes validation {
-    0%{ transform: scaleX(0);}
-    100%{transform: scaleX(1);}
-
+@keyframes validate {
+    0% { transform: translateX(200%) rotate(1turn);}
+    49% {transform: translateX(-98%) scaleX(0.5) ;}
+    50% {transform: translateX(-100%) ;}
+    51% {transform: translateX(-100%) scaleX(0.5) ;}
+    70% {transform: translate(-50% ,-100%) rotate(-1turn) scaleY(0.5);}
+    100%{transform: translateX(0) ; }
 }

@@ -59,39 +59,48 @@
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    position: relative;
     &__Text{
-        max-width:70% ;
         display: flex;
         flex-direction: column;
         overflow: hidden;  
+        transform-origin:left;
     }
     &__Names {
         white-space: nowrap; 
         overflow: hidden;   
         text-overflow: ellipsis;
-        margin-top: 10px;
+        margin-top: 20px;
+        
         }
     &__comments {
         white-space: nowrap; 
         overflow: hidden;   
         text-overflow: ellipsis;
-        }
-    &__prices {
-        display: flex;
-        justify-content: flex-end;
         align-items: flex-end;
-    }
+            }
+    &__prices {
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }   
     &__validation {
-        transition: transform  0.2s ease-out;
-        transform: translateX(50%) scaleX(0);
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transform-origin:right ;
+        transition: transform  0.2s ease-in-out;
+        transform: scaleX(0);
         overflow: hidden;
-            background: $color-tertiary;
-            color:$color-tertiary;
-            @include centralizer;
-            min-width: 80px;
-            margin-left: 5px;
-            border-bottom-right-radius:15px;
-            border-top-right-radius:15px;
+        background: $color-tertiary;
+        color:$color-tertiary;
+        @include centralizer;
+        width: 80px;
+        margin-left: 5px;
+        border-bottom-right-radius:15px;
+        border-top-right-radius:15px;
             i {
                 height: 30px;
                 width: 30px;
@@ -102,11 +111,18 @@
             }
         
     } 
+    &:hover > .MenusTags__prices{
+        transform:  translateX(-250%);
+    }
+    &:hover > .MenusTags__Text {
+        transform:  scaleX(0.7);
+        @include tab {transform:  scaleX(1)}
+    }
     &:hover > .MenusTags__validation i  {
-    animation: validate 0.4s 0.2s ease-out both;
+    animation: validate 0.4s 0.1s ease-out both;
     }
     &:hover > .MenusTags__validation  {
-        transform: translateX(0) scaleX(1);
+        transform:  scaleX(1);
     }
 
 }

@@ -60,6 +60,7 @@
 /******icons coeur*****/
 .contenair_i_rel {
     position: relative;
+    cursor: pointer;
     &:active >.fa-solid {
         opacity: 1;
         z-index: 1;

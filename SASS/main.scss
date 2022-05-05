@@ -1,22 +1,27 @@
-@import "./Vendors/normalize";
-@import "./utils/variables";
-@import "./utils/keyframes";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
-@import "./base/base";
-@import "./base/typography";
-@import "./components/buttons";
-@import "./layouts/nav";
-@import "./layouts/container";
-@import "./layouts/form";
-@import "./pages/header";
-@import "./pages/home";
-@import "./pages/menu";
-@import "./pages/footer";
+@import "Vendors/normalize";
+@import "utils/variables";
+@import "utils/keyframes";
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/extensions";
+@import "base/base";
+@import "base/typography";
+@import "components/buttons";
+@import "layouts/nav";
+@import "layouts/container";
+@import "layouts/form";
+@import "pages/header";
+@import "pages/home";
+@import "pages/menu";
+@import "pages/footer";
 
+.loadSpinner {
+    opacity:0;
+    position: absolute;
+    height:100% ;
+    width: 100%;
+}
 .logo_AJT {
     animation: anim_logo 2800ms ease-out 200ms forwards;
-    font-family: "Titles" ;
-    font-size: 2rem;
+    background: url(images/logo/ohmyfood.png);
 }

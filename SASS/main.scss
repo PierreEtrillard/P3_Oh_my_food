@@ -16,12 +16,51 @@
 @import "pages/footer";
 
 .loadSpinner {
-    opacity:0;
-    position: absolute;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
     height:100% ;
     width: 100%;
+    background-color: white;
+    animation: loader 3s forwards;
 }
-.logo_AJT {
-    animation: anim_logo 2800ms ease-out 200ms forwards;
-    background: url(images/logo/ohmyfood.png);
-}
+
+.logo-AJT {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    @include centralizer;
+    animation: loader 3s;
+        &__o1 {
+            color: $color-tertiary;
+            animation:  o1 1.2s ease-out  backwards;
+        }
+        &__h {
+            color: $color-primary;
+            animation: h 0.3s ease-out 0.35s both;
+        }
+        &__m , .logo-AJT__y {
+            color: $color-secondary;
+            transform-origin: center bottom 1px;
+            animation: my 1.5s ease-out 1s both;
+        }
+       
+        &__f {
+            color: $color-primary;
+            animation: f 0.3s ease-out 1.7s both;
+        }
+        &__o2 {
+            color: $color-tertiary;
+            animation: o2 1s ease-out .8s backwards;
+        }
+        &__o3 {
+            color: $color-tertiary;
+            animation: o3 .8s ease-out .4s backwards;
+        }
+        &__d {
+            color: $color-primary;
+            transform-origin:right;
+            animation: d .5s ease-in-out 0.5s both;
+        }
+    }

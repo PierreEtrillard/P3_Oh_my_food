@@ -23,6 +23,11 @@
     width: 100%;
    @include centralizer;
     flex-direction: column;
+    @include tab {
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
     h2 {
          display: flex;
          justify-content: space-around;
@@ -31,12 +36,15 @@
     .Starter {
         animation: reveal 1s backwards;}   
     .Plats {
-        animation:reveal 2s backwards;}
+        animation:reveal 2s backwards;
+        @include tab {margin:20px 40px 20px 40px}
+    }
     .Desserts {
         margin-bottom: 40px;
         animation:reveal 3s backwards;}
     .Menus_contenair {
         width: 100%;
+        @include tab {width: 30%;}
         h3 {
             position: relative;
             font-size: 22px;
@@ -122,7 +130,7 @@
         @include tab {transform:  scaleX(1)}
     }
     &:hover > .MenusTags__validation i  {
-    animation: validate 0.4s 0.1s ease-out both;
+    animation: validate 0.3s 0.1s ease-out both;
     }
     &:hover > .MenusTags__validation  {
         transform:  scaleX(1);

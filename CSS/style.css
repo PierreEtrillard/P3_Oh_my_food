@@ -351,22 +351,22 @@ template {
 }
 @keyframes validate {
   0% {
-    transform: translateX(200%) rotate(1turn);
+    transform: translateX(200%);
   }
-  49% {
-    transform: translateX(-98%) scaleX(0.5);
+  48% {
+    transform: translateX(-98%) scaleX(1) rotate(-2turn);
   }
   50% {
-    transform: translateX(-100%);
+    transform: translateX(-100%) scaleX(0.8) rotate(-90deg);
   }
   51% {
-    transform: translateX(-100%) scaleX(0.5);
+    transform: translateX(-100%) rotate(-180deg) scale(0.5, 1.2);
   }
   70% {
-    transform: translate(-50%, -100%) rotate(-1turn) scaleY(0.5);
+    transform: translate(-50%, -100%) rotate(-1turn) scale(1.2, 0.8);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(0) rotate(-2turn);
   }
 }
 @keyframes FullHeart {
@@ -843,6 +843,13 @@ header a i {
   justify-content: center;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .menus {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
 .menus h2 {
   display: flex;
   justify-content: space-around;
@@ -854,12 +861,22 @@ header a i {
 .menus .Plats {
   animation: reveal 2s backwards;
 }
+@media screen and (min-width: 768px) {
+  .menus .Plats {
+    margin: 20px 40px 20px 40px;
+  }
+}
 .menus .Desserts {
   margin-bottom: 40px;
   animation: reveal 3s backwards;
 }
 .menus .Menus_contenair {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .menus .Menus_contenair {
+    width: 30%;
+  }
 }
 .menus .Menus_contenair h3 {
   position: relative;
@@ -951,7 +968,7 @@ header a i {
   }
 }
 .MenusTags:hover > .MenusTags__validation i {
-  animation: validate 0.4s 0.1s ease-out both;
+  animation: validate 0.3s 0.1s ease-out both;
 }
 .MenusTags:hover > .MenusTags__validation {
   transform: scaleX(1);

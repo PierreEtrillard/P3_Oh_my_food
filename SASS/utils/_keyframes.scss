@@ -1,8 +1,4 @@
-@keyframes reveal {
-    0%{opacity: 0;}
-    60%{opacity:0.5;}
-    100%{opacity: 1;}
-}
+// animation de l'icone validate: part de la droite, s'écrase à gauche et attérie au centre sur trois tours
 @keyframes validate {
     0% { transform: translateX(200%);}
     48% {transform: translateX(-98%) scaleX(1) rotate(-2turn);}
@@ -11,13 +7,25 @@
     70% {transform: translate(-50% ,-100%) rotate(-1turn) scale(1.2,0.8);}
     100%{transform: translateX(0) rotate(-2turn); }
 }
+
 @keyframes FullHeart {
     0% {opacity:0}
     50% {transform: scale(1);}
     99% {transform: scale(1.5);}
     100% {opacity: 1;}
 }
+// anim des étiquette menu: départ horizontal sur l'axe z effet de balancier
+@keyframes MenusTags {
+    0% {transform:rotateX(1turn) translateZ(180px)}
 
+    100% {transform:rotateX(0deg) translateZ(180px)}
+}
+// aparition progressive des sections de menus
+@keyframes reveal {
+    0%{opacity: 0;}
+    60%{opacity:0.5;}
+    100%{opacity: 1;}
+}
 /**************load spinnner**************/
 @keyframes loader {
     0% { opacity: 1;}
@@ -46,18 +54,15 @@
     10% {transform:rotateX(1turn) translateZ(1px)}
 }
 @keyframes f {
-    10% {transform:scale(0.5,2) translateX(-30%)}
+    5% {transform:scale(0.5,2) translateX(-30%)}
 }
 @keyframes o2 {
     0% {transform: translateX(1000px) rotate(4turn);}
-    33%{}
-    95%{transform:  translateX(-50%)}
+    94%{transform:  translateX(-50%)}
     100%{transform: translateX(0)}
 }
 @keyframes o3 {
     0% {transform: translateX(-1000px) rotate(-4turn);}
-    33%{}
-    66%{}
     100%{transform:  translateX(0)}
 }
 @keyframes d {

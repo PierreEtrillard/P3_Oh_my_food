@@ -338,17 +338,6 @@ template {
   display: none;
 }
 
-@keyframes reveal {
-  0% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes validate {
   0% {
     transform: translateX(200%);
@@ -378,6 +367,25 @@ template {
   }
   99% {
     transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes MenusTags {
+  0% {
+    transform: rotateX(1turn) translateZ(180px);
+  }
+  100% {
+    transform: rotateX(0deg) translateZ(180px);
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -436,7 +444,7 @@ template {
   }
 }
 @keyframes f {
-  10% {
+  5% {
     transform: scale(0.5, 2) translateX(-30%);
   }
 }
@@ -444,7 +452,7 @@ template {
   0% {
     transform: translateX(1000px) rotate(4turn);
   }
-  95% {
+  94% {
     transform: translateX(-50%);
   }
   100% {
@@ -856,10 +864,10 @@ header a i {
   width: 100%;
 }
 .menus .Starter {
-  animation: reveal 1s backwards;
+  animation: reveal 0.3s backwards;
 }
 .menus .Plats {
-  animation: reveal 2s backwards;
+  animation: reveal 0.6s backwards;
 }
 @media screen and (min-width: 768px) {
   .menus .Plats {
@@ -868,7 +876,7 @@ header a i {
 }
 .menus .Desserts {
   margin-bottom: 40px;
-  animation: reveal 3s backwards;
+  animation: reveal 1s backwards;
 }
 .menus .Menus_contenair {
   width: 100%;
@@ -898,10 +906,15 @@ header a i {
   box-shadow: 0px 5px 5px 2px #d0d0d0;
   border-radius: 15px;
   margin: 20px 0 20px 0;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
   position: relative;
+  perspective: 180px;
+  transform-style: preserve-3d;
+  transform-origin: center center 180px;
+  animation: MenusTags 0.5s forwards;
 }
 .MenusTags__Text {
   display: flex;
@@ -956,6 +969,33 @@ header a i {
   justify-content: center;
   margin: 5px;
 }
+.MenusTags__anim--1 {
+  animation-delay: 0.1s;
+}
+.MenusTags__anim--2 {
+  animation-delay: 0.2s;
+}
+.MenusTags__anim--3 {
+  animation-delay: 0.3s;
+}
+.MenusTags__anim--4 {
+  animation-delay: 0.4s;
+}
+.MenusTags__anim--5 {
+  animation-delay: 0.5s;
+}
+.MenusTags__anim--6 {
+  animation-delay: 0.6s;
+}
+.MenusTags__anim--7 {
+  animation-delay: 0.7s;
+}
+.MenusTags__anim--8 {
+  animation-delay: 0.8s;
+}
+.MenusTags__anim--9 {
+  animation-delay: 0.9s;
+}
 .MenusTags:hover > .MenusTags__prices {
   transform: translateX(-250%);
 }
@@ -968,7 +1008,7 @@ header a i {
   }
 }
 .MenusTags:hover > .MenusTags__validation i {
-  animation: validate 0.3s 0.1s ease-out both;
+  animation: validate 0.3s 0.1s ease-out forwards;
 }
 .MenusTags:hover > .MenusTags__validation {
   transform: scaleX(1);
@@ -1047,15 +1087,15 @@ ul li a:visited {
 }
 .logo-AJT__f {
   color: #9356DC;
-  animation: f 0.2s ease-out 1.5s both;
+  animation: f 0.2s ease-out 1.3s both;
 }
 .logo-AJT__o2 {
   color: #99E2D0;
-  animation: o2 0.8s ease-out 0.8s backwards;
+  animation: o2 0.6s ease-out 0.7s backwards;
 }
 .logo-AJT__o3 {
   color: #99E2D0;
-  animation: o3 0.6s ease-out 0.4s backwards;
+  animation: o3 0.6s ease-out 0.5s backwards;
 }
 .logo-AJT__d {
   color: #9356DC;

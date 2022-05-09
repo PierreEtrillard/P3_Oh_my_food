@@ -15,7 +15,7 @@
 @import "pages/menu";
 @import "pages/footer";
 
-.loadSpinner {
+.loadAnim {
     z-index: 100;
     position: fixed;
     top: 0;
@@ -31,36 +31,35 @@
     width: 100%;
     top: 50%;
     @include centralizer;
-    animation: loader 3s;
         &__o1 {
             color: $color-tertiary;
-            animation:  o1 1.2s ease-out  backwards;
+            animation:  o1 1s ease-out  backwards;
         }
         &__h {
             color: $color-primary;
-            animation: h 0.3s ease-out 0.35s both;
+            animation: h 0.6s ease-out 0.35s both;
         }
         &__m , .logo-AJT__y {
             color: $color-secondary;
             transform-origin: center bottom 1px;
-            animation: my 1.5s ease-out 1s both;
+            animation: my 1.3s ease-out 1s both;
         }
        
         &__f {
             color: $color-primary;
-            animation: f 0.3s ease-out 1.7s both;
+            animation: f 0.2s ease-out 1.5s both;
         }
         &__o2 {
             color: $color-tertiary;
-            animation: o2 1s ease-out .8s backwards;
+            animation: o2 0.8s ease-out .8s backwards;
         }
         &__o3 {
             color: $color-tertiary;
-            animation: o3 .8s ease-out .4s backwards;
+            animation: o3 .6s ease-out .4s backwards;
         }
         &__d {
             color: $color-primary;
             transform-origin:right;
-            animation: d .5s ease-in-out 0.5s both;
+            animation: d .3s ease-in-out 0.5s both;
         }
     }

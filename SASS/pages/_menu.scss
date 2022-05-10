@@ -79,42 +79,32 @@
     &__Text{
         display: flex;
         flex-direction: column;
-        overflow: hidden;     
-        flex:1 1 100%;     
+        overflow: hidden; 
+        transform-origin: left;    
     }
     &__Names {
         white-space: nowrap; 
         overflow: hidden;   
         text-overflow: ellipsis;
         margin-top: 20px;
-        
         }
-    &__Bottom {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        overflow: hidden;   
-    }
     &__comments {
         white-space: nowrap; 
         overflow: hidden;   
         text-overflow: ellipsis;
-        flex:1 1 80%;
     }
     &__prices {
             display: flex;
             align-items: flex-end;
             margin-bottom: 20px;
             margin-right: 10px;
-            flex:1 0 20%;
         }   
    
     &__validation {
-        /*position: absolute;
+        position: absolute;
         right: 0;
         top: 0;
-        bottom: 0;*/
-        flex:2 2 80px;
+        bottom: 0;
         transform-origin:right ;
         transition: transform  0.2s ease-in-out;
         transform: scaleX(0);
@@ -136,21 +126,21 @@
             }
     } 
     &__anim {
-        @for $p from 1 to 10 {
+        @for $p from 1 to 12 {
           &--#{$p} { animation-delay: $p*$delay-TagsAnim;}
           }
     }
         
          
-    /*&:hover > .MenusTags__prices{
-        transform:  translateX(-250%);
-        transition: 0.5s ease-in-out;
+    &:hover > .MenusTags__prices{
+        transform:  translateX(-80px);
+        transition: 0.2s ease-in-out;
     }
     &:hover > .MenusTags__Text {
+        transition: 0.3s ease-in-out;
         transform:  scaleX(0.7);
-        @include tab {transform:  scaleX(1)}
     }
-    */&:hover > .MenusTags__validation i  {
+    &:hover > .MenusTags__validation i  {
     animation: validate 0.3s 0.1s ease-out forwards;
     }
     &:hover > .MenusTags__validation  {

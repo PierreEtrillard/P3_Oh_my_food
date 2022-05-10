@@ -871,7 +871,7 @@ header a i {
 }
 @media screen and (min-width: 768px) {
   .menus .Plats {
-    margin: 20px 40px 20px 40px;
+    margin: 20px 35px 20px 35px;
   }
 }
 .menus .Desserts {
@@ -915,12 +915,21 @@ header a i {
   transform-style: preserve-3d;
   transform-origin: center center 180px;
   animation: MenusTags 0.5s forwards;
+  /*&:hover > .MenusTags__prices{
+      transform:  translateX(-250%);
+      transition: 0.5s ease-in-out;
+  }
+  &:hover > .MenusTags__Text {
+      transform:  scaleX(0.7);
+      @include tab {transform:  scaleX(1)}
+  }
+  */
 }
 .MenusTags__Text {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  transform-origin: left;
+  flex: 1 1 100%;
 }
 .MenusTags__Names {
   white-space: nowrap;
@@ -928,23 +937,31 @@ header a i {
   text-overflow: ellipsis;
   margin-top: 20px;
 }
+.MenusTags__Bottom {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  overflow: hidden;
+}
 .MenusTags__comments {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  align-items: flex-end;
+  flex: 1 1 80%;
 }
 .MenusTags__prices {
   display: flex;
   align-items: flex-end;
   margin-bottom: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
+  flex: 1 0 20%;
 }
 .MenusTags__validation {
-  position: absolute;
+  /*position: absolute;
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: 0;*/
+  flex: 2 2 80px;
   transform-origin: right;
   transition: transform 0.2s ease-in-out;
   transform: scaleX(0);
@@ -995,17 +1012,6 @@ header a i {
 }
 .MenusTags__anim--9 {
   animation-delay: 0.9s;
-}
-.MenusTags:hover > .MenusTags__prices {
-  transform: translateX(-250%);
-}
-.MenusTags:hover > .MenusTags__Text {
-  transform: scaleX(0.7);
-}
-@media screen and (min-width: 768px) {
-  .MenusTags:hover > .MenusTags__Text {
-    transform: scaleX(1);
-  }
 }
 .MenusTags:hover > .MenusTags__validation i {
   animation: validate 0.3s 0.1s ease-out forwards;

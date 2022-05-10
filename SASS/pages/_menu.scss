@@ -38,7 +38,7 @@
     }   
     .Plats {
         animation:reveal 0.6s backwards;
-        @include tab {margin:20px 40px 20px 40px}
+        @include tab {margin:20px 35px 20px 35px}
     }
     .Desserts {
         margin-bottom: 40px;
@@ -79,9 +79,8 @@
     &__Text{
         display: flex;
         flex-direction: column;
-        overflow: hidden;  
-        transform-origin:left;
-        
+        overflow: hidden;     
+        flex:1 1 100%;     
     }
     &__Names {
         white-space: nowrap; 
@@ -90,23 +89,32 @@
         margin-top: 20px;
         
         }
+    &__Bottom {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        overflow: hidden;   
+    }
     &__comments {
         white-space: nowrap; 
         overflow: hidden;   
         text-overflow: ellipsis;
-        align-items: flex-end;
-            }
+        flex:1 1 80%;
+    }
     &__prices {
             display: flex;
             align-items: flex-end;
             margin-bottom: 20px;
-            margin-right: 20px;
+            margin-right: 10px;
+            flex:1 0 20%;
         }   
+   
     &__validation {
-        position: absolute;
+        /*position: absolute;
         right: 0;
         top: 0;
-        bottom: 0;
+        bottom: 0;*/
+        flex:2 2 80px;
         transform-origin:right ;
         transition: transform  0.2s ease-in-out;
         transform: scaleX(0);
@@ -134,14 +142,15 @@
     }
         
          
-    &:hover > .MenusTags__prices{
+    /*&:hover > .MenusTags__prices{
         transform:  translateX(-250%);
+        transition: 0.5s ease-in-out;
     }
     &:hover > .MenusTags__Text {
         transform:  scaleX(0.7);
         @include tab {transform:  scaleX(1)}
     }
-    &:hover > .MenusTags__validation i  {
+    */&:hover > .MenusTags__validation i  {
     animation: validate 0.3s 0.1s ease-out forwards;
     }
     &:hover > .MenusTags__validation  {

@@ -27,6 +27,16 @@
     100%{opacity: 1;}
 }
 /**************load spinnner**************/
+@keyframes SoftLoader {
+0%      {transform: rotateX(1turn);}
+50%     {transform: rotate(2turn);}
+100%    {transform: rotate(1turn);}
+}
+@keyframes LoaderBg {
+    from {transform:translateY(-800px) rotateY(2turn);}
+    to {transform:translateY(0) ;}
+}
+/**************loader élaboré*****************/
 @keyframes loader {
     0% { opacity: 1;}
     75% { opacity: 1;}

@@ -69,7 +69,7 @@
     margin: 20px 0 20px 0;
     height: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     cursor: pointer;
     position: relative;
     perspective: 180px;
@@ -80,13 +80,16 @@
         display: flex;
         flex-direction: column;
         overflow: hidden; 
-        transform-origin: left;    
+        transform-origin: left; 
+        align-self: flex-start;   
+        width: 100%;
     }
     &__Names {
         white-space: nowrap; 
         overflow: hidden;   
         text-overflow: ellipsis;
         margin-top: 20px;
+        text-align: left;
         }
     &__comments {
         white-space: nowrap; 
@@ -101,18 +104,13 @@
         }   
    
     &__validation {
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
         transform-origin:right ;
-        transition: transform  0.2s ease-in-out;
         transform: scaleX(0);
         overflow: hidden;
         background: $color-tertiary;
         color:$color-tertiary;
         @include centralizer;
-        width: 80px;
+        width: 0px;
         margin-left: 5px;
         border-bottom-right-radius:15px;
         border-top-right-radius:15px;
@@ -131,20 +129,13 @@
           }
     }
         
-         
-    &:hover > .MenusTags__prices{
-        transform:  translateX(-80px);
-        transition: 0.2s ease-in-out;
-    }
-    &:hover > .MenusTags__Text {
-        transition: 0.3s ease-in-out;
-        transform:  scaleX(0.7);
-    }
     &:hover > .MenusTags__validation i  {
     animation: validate 0.3s 0.1s ease-out forwards;
     }
     &:hover > .MenusTags__validation  {
-        transform:  scaleX(1);
+        min-width: 80px;
+        transform: scaleX(1);
+        transition: 150ms ease-in-out;
     }
 
 }

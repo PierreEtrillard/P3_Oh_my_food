@@ -2,125 +2,127 @@
     position: relative;
    img {
     height:300px;
-    width: 100%;
-    position: relative;
     object-fit: cover;
+    position: relative;
+    width: 100%;
     }
     .no_marg_neg {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 40px;
+        background: $color-grey;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
-        background: $color-grey;
+        bottom: 0;
+        height: 40px;
+        position: absolute;
+        width: 100%;
     }
 }
 
 .menus {
-    padding:25px 20px 40px 20px;
+    @include centralizer;
     background: $color-grey;
-    width: 100%;
-   @include centralizer;
     flex-direction: column;
+    padding:25px 20px 40px 20px;
+    width: 100%;
     @include tab {
+        align-items: baseline;
         flex-direction:row;
         flex-wrap: wrap;
-        align-items: baseline;
     }
     h2 {
-         display: flex;
-         justify-content: space-around;
-         width: 100%;
-     }
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
     .Starter {
         animation: reveal 0.3s backwards;
     }   
     .Plats {
-        animation:reveal 0.6s backwards;
         @include tab {margin:20px 35px 20px 35px}
+        animation:reveal 0.6s backwards;
     }
     .Desserts {
+        animation:reveal 1s backwards;
         margin-bottom: 40px;
-        animation:reveal 1s backwards;}
+    }
     .Menus_contenair {
-        width: 100%;
         @include tab {width: 30%;}
+        width: 100%;
         h3 {
-            position: relative;
             font-size: 22px;
             padding: 30px 0 10px 0;
+            position: relative;
         }
         h3::after {
-            content: "";
-            width: 50px;
-            height: 3px;
             background-color: #99e2d0;
-            position: absolute;
-            left: 0;
             bottom: 0;
+            content: "";
+            height: 3px;
+            left: 0;
+            position: absolute;
+            width: 50px;
         }
     }
 }
+
 .MenusTags {
-    background: white;
-    box-shadow: 0px 5px 5px 2px darken($color-grey, 15%);
-    border-radius: 15px;
-    margin: 20px 0 20px 0;
-    height: 100px;
-    display: flex;
-    justify-content: flex-end;
-    cursor: pointer;
-    position: relative;
-    perspective: 180px;
-    transform-style: preserve-3d;
-    transform-origin: center center 180px;
     animation: MenusTags 0.5s forwards;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 2px darken($color-grey, 15%);
+    cursor: pointer;
+    display: flex;
+    height: 100px;
+    justify-content: flex-end;
+    margin: 20px 0 20px 0;
+    perspective: 180px;
+    position: relative;
+    transform-origin: center center 180px;
+    transform-style: preserve-3d;
     &__Text{
+        align-self: flex-start;   
         display: flex;
         flex-direction: column;
         overflow: hidden; 
         transform-origin: left; 
-        align-self: flex-start;   
         width: 100%;
     }
     &__Names {
-        white-space: nowrap; 
-        overflow: hidden;   
-        text-overflow: ellipsis;
         margin-top: 20px;
+        overflow: hidden;   
         text-align: left;
+        text-overflow: ellipsis;
+        white-space: nowrap; 
         }
     &__comments {
-        white-space: nowrap; 
         overflow: hidden;   
         text-overflow: ellipsis;
+        white-space: nowrap; 
     }
     &__prices {
-            display: flex;
             align-items: flex-end;
+            display: flex;
             margin-bottom: 20px;
             margin-right: 10px;
         }   
    
     &__validation {
-        transform-origin:right ;
-        transform: scaleX(0);
-        overflow: hidden;
-        background: $color-tertiary;
-        color:$color-tertiary;
         @include centralizer;
-        width: 0px;
-        margin-left: 5px;
+        background: $color-tertiary;
         border-bottom-right-radius:15px;
         border-top-right-radius:15px;
+        color:$color-tertiary;
+        margin-left: 5px;
+        overflow: hidden;
+        transform-origin:right ;
+        transform: scaleX(0);
+        width: 0px;
             i {
-                height: 30px;
-                width: 30px;
-                border-radius: 50px 50px 50px 50px;
-                background-color: white;
                 @include centralizer;
+                background-color: white;
+                border-radius: 50px 50px 50px 50px;
+                height: 30px;
                 margin: 5px;
+                width: 30px;
             }
     } 
     &__anim {

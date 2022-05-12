@@ -28,14 +28,26 @@
 }
 /**************load spinnner**************/
 @keyframes SoftLoader {
-0%      {transform: rotateX(1turn);}
-50%     {transform: rotate(2turn);}
-100%    {transform: rotate(1turn);}
+from     {transform: rotate(0deg);}
+to    {transform: rotate(1turn);}
 }
 @keyframes LoaderBg {
-    from {transform:translateY(-800px) rotateY(2turn);}
-    to {transform:translateY(0) ;}
+    from {transform:rotateX(90deg);}
+    50% {transform:rotateX(2turn);}
+    to {transform:rotateX(-1turn);}
 }
+@keyframes shine {
+    from {transform: skewX(45deg) translateX(-350%); }
+    30% {transform: skewX(45deg) translateX(0); }
+    to {transform: skewX(45deg) translateX(350%); }
+}
+@keyframes biger {
+    from {transform: scale(1);}
+    50% {transform: scale(5)translatey(-25%);}   
+    to {transform: scale(1);}   
+}
+
+
 /**************loader élaboré*****************/
 @keyframes loader {
     0% { opacity: 1;}

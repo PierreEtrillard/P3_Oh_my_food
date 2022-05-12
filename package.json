@@ -4,7 +4,7 @@
   "description": "projet 3 formation OC",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch SASS/main.scss:CSS/style.css --style expanded",
+    "sass": "sass --watch SASS/main.scss:CSS/style.css --style compressed",
     "prefix": "postcss CSS/style.css --use autoprefixer -d CSS/prefixed"
   },
   "repository": {

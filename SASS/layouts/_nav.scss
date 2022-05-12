@@ -9,9 +9,6 @@
         flex-direction:row;
         justify-content: space-evenly;
         }
-        @include desktop {
-            width: 95%;
-        }
     flex-direction:column;
         &__cards {
             @include tab {

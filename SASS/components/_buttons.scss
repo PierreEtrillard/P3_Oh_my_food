@@ -15,10 +15,10 @@
 .contenair_i_rel {
     position: relative;
     cursor: pointer;
-    &:active >.fa-solid {
+    &:hover >.fa-solid {
         animation: FullHeart 400ms forwards;
     }
-    &:active >.fa-regular {
+    &:hover >.fa-regular {
         opacity: 0;
     }             
      .fa-solid {

@@ -1,15 +1,12 @@
 @import "Vendors/normalize";
 @import "utils/variables";
 @import "utils/keyframes";
-@import "utils/functions";
 @import "utils/mixins";
-@import "utils/extensions";
 @import "base/base";
 @import "base/typography";
 @import "components/loader";
 @import "components/buttons";
 @import "layouts/nav";
-@import "layouts/container";
 @import "layouts/form";
 @import "pages/header";
 @import "pages/home";

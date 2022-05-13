@@ -16,11 +16,17 @@
     position: relative;
     cursor: pointer;
     &:hover >.fa-solid {
-        animation: FullHeart 400ms forwards;
+        animation: FullHeart 400ms both;
     }
     &:hover >.fa-regular {
         opacity: 0;
-    }             
+    }
+    &:active >.fa-solid {
+        animation: FullHeart 400ms both;
+    }
+    &:active >.fa-regular {
+        opacity: 0;
+    }                          
      .fa-solid {
         position:absolute;
         top: 0;
@@ -33,7 +39,6 @@
         background:linear-gradient($color-primary,$color-secondary) no-repeat;
         background-clip: text;
         -webkit-background-clip: text;
-        
         }
 
     }

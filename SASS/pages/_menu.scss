@@ -146,5 +146,19 @@
     &:hover > .MenusTags__validation  {
         transform:  scaleX(1);
     }
+    &:active > .MenusTags__prices{
+        transform:  translateX(-80px);
+        transition: 0.2s ease-in-out;
+    }
+    &:active > .MenusTags__Text {
+        transition: 0.3s ease-in-out;
+        transform:  scaleX(0.7);
+    }
+    &:active > .MenusTags__validation i  {
+    animation: validate 0.3s 0.1s ease-out forwards;
+    }
+    &:active > .MenusTags__validation  {
+        transform:  scaleX(1);
+    }
 
 }

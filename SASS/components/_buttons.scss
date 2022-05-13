@@ -20,7 +20,13 @@
     }
     &:hover >.fa-regular {
         opacity: 0;
-    }             
+    }
+    &:active >.fa-solid {
+        animation: FullHeart 400ms both;
+    }
+    &:active >.fa-regular {
+        opacity: 0;
+    }                          
      .fa-solid {
         position:absolute;
         top: 0;

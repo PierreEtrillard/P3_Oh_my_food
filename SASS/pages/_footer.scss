@@ -14,7 +14,7 @@ ul {
             filter: invert(100%);
             height: 80px;
             @include retina {
-              background: no-repeat auto auto left/35% url(../images/logo/ohmyfood@2x.svg);
+              background: no-repeat left/35% url(../images/logo/ohmyfood@2x.svg);
               }
             @include tab {
               background:  no-repeat left/15% url(../images/logo/ohmyfood.png);

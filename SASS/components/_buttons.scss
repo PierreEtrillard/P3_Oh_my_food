@@ -16,13 +16,13 @@
     position: relative;
     cursor: pointer;
     &:hover >.fa-solid {
-        animation: FullHeart 400ms both;
+        animation: FullHeart 400ms forwards;
     }
     &:hover >.fa-regular {
         opacity: 0;
     }
     &:active >.fa-solid {
-        animation: FullHeart 400ms both;
+        animation: FullHeart 400ms forwards;
     }
     &:active >.fa-regular {
         opacity: 0;

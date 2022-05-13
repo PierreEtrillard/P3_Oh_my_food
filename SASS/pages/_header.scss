@@ -2,7 +2,7 @@ header {
     background: no-repeat center/40% url("../images/logo/ohmyfood.png");
     height: 80px;
     @include retina {
-      background: no-repeat auto auto center/40% url("../images/logo/ohmyfood@2x.svg");
+      background: no-repeat center/40% url("../images/logo/ohmyfood@2x.svg");
     }
     @include tab {
       height: 130px;
@@ -10,7 +10,7 @@ header {
     @include desktop {
       background: no-repeat center/30% url("../images/logo/ohmyfood.png");
       @include retina {
-        background: no-repeat auto auto center/40% url("../images/logo/ohmyfood@2x.svg");
+        background: no-repeat center/40% url("../images/logo/ohmyfood@2x.svg");
       }
     }
     

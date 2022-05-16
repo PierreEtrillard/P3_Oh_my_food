@@ -28,10 +28,11 @@
         flex-direction:row;
         flex-wrap: wrap;
     }
-    h2 {
+    &__top {
         display: flex;
         justify-content: space-around;
         width: 100%;
+        i {font-size: 22px ;}
     }
     .Starter {
         animation: reveal 0.3s backwards;

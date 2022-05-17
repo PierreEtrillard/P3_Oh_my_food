@@ -16,7 +16,8 @@
         animation: LoaderBg linear 1s;
         transform-origin:center;
         perspective: 100px;
-        background:no-repeat center url("../images/logo/ohmyfood.png") ;
+        background:no-repeat center/100% url("../images/logo/ohmyfood.png") ;
+        @include tab {background:no-repeat center url("../images/logo/ohmyfood.png") ;}
         height:20%;
         width: 100%;
         top: 40%;

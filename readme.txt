@@ -1,6 +1,6 @@
 Bienvenu dans le manuel de maintenance du site ohmyfood
 
-Les préprocesseurs sass et postcss (autoprefixer) ont étés utilisés pour ce projet.
+Les préprocesseurs sass et postcss (pour autoprefixer) ont étés utilisés pour ce projet.
 L'installation de npm et de ses modules sass & autoprefixer sera necesaire en cas de revision du projet.
 Sass possède un fichier principal "main.scss" pointant vers des partiels comme indiqué ci dessous:
 

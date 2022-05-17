@@ -132,7 +132,7 @@
           }
     }
     &:active > .MenusTags__validation i  {
-        animation: validate 0.3s 0.1s ease-out forwards;
+        animation: validate 0.3s 0.1s ease-out backwards;
     }
     &:active > .MenusTags__validation  {
         min-width: 80px;
@@ -140,7 +140,7 @@
         transition: 150ms ease-in-out;
     }    
     &:hover > .MenusTags__validation i  {
-    animation: validate 0.3s 0.1s ease-out forwards;
+    animation: validate 0.3s 0.1s ease-out backwards;
     }
     &:hover > .MenusTags__validation  {
         min-width: 80px;
